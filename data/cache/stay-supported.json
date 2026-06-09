@@ -1,0 +1,226 @@
+{
+  "stayId": "stay-supported",
+  "generatedAt": "2026-06-09T00:00:00.000Z",
+  "modelId": "claude-sonnet-4-6",
+  "criteria": [
+    {
+      "criterionId": "risk_safety",
+      "status": "supported",
+      "evidence": [
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg004",
+          "timestampSec": 68,
+          "speaker": "patient",
+          "quote": "Yes. I have a plan. I know what I would use and when. I can't promise I won't do it.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg006",
+          "timestampSec": 110,
+          "speaker": "patient",
+          "quote": "No. I don't think I can keep that promise. I don't trust myself right now.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg007",
+          "timestampSec": 138,
+          "speaker": "nurse",
+          "quote": "Patient will need one-to-one observation given active plan and inability to contract for safety.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg002",
+          "timestampSec": 18,
+          "speaker": "nurse",
+          "quote": "He remains on one-to-one observation. Overnight he was found attempting to tie a sheet around his neck and was redirected by staff.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg004",
+          "timestampSec": 60,
+          "speaker": "patient",
+          "quote": "I just want it to stop. I know I tried something last night. I can't guarantee I won't try again.",
+          "verified": true
+        }
+      ],
+      "rationale": "The patient presented with an active, specific suicide plan and explicitly refused to contract for safety. One-to-one observation was initiated on admission. On day three, the patient made a self-harm attempt on the unit (attempted ligature) and continues to express inability to guarantee safety.",
+      "confidence": 0.97,
+      "gap": null
+    },
+    {
+      "criterionId": "functional_impairment",
+      "status": "supported",
+      "evidence": [
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg009",
+          "timestampSec": 177,
+          "speaker": "patient",
+          "quote": "My roommate moved out. There's no one there. It's been completely chaotic, I haven't slept in three days.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg011",
+          "timestampSec": 215,
+          "speaker": "patient",
+          "quote": "Not really. I had coffee today. I can't sit still long enough to eat.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg005",
+          "timestampSec": 85,
+          "speaker": "nurse",
+          "quote": "He still isn't sleeping. He was awake all night pacing and required two staff to manage behavioral agitation around 3 AM.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg006",
+          "timestampSec": 112,
+          "speaker": "nurse",
+          "quote": "He refused all meals yesterday and needed staff assistance to change clothes this morning.",
+          "verified": true
+        }
+      ],
+      "rationale": "The patient reported three days without sleep and minimal food intake on admission. Nursing reports continued sleep deprivation, refusal of all meals, need for staff assistance with basic self-care, and behavioral dyscontrol requiring two-staff management overnight — all indicating severe functional impairment.",
+      "confidence": 0.94,
+      "gap": null
+    },
+    {
+      "criterionId": "deterioration_risk",
+      "status": "supported",
+      "evidence": [
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg009",
+          "timestampSec": 177,
+          "speaker": "patient",
+          "quote": "My roommate moved out. There's no one there. It's been completely chaotic, I haven't slept in three days.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg012",
+          "timestampSec": 240,
+          "speaker": "psychiatrist",
+          "quote": "You were on a PHP nine days ago and decompensated within the week of leaving. That tells us a lower level of care is not going to hold right now.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg010",
+          "timestampSec": 205,
+          "speaker": "social_worker",
+          "quote": "He has no safe discharge environment. His roommate is gone, there is no family in the area, and he has no outpatient team currently established.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg013",
+          "timestampSec": 295,
+          "speaker": "social_worker",
+          "quote": "He explicitly left the PHP against staff advice on day three of that program, which also contributed to his rapid return.",
+          "verified": true
+        }
+      ],
+      "rationale": "The patient has no safe home environment (roommate gone, no family nearby, no outpatient team), decompensated within nine days of leaving a recent PHP — which he also left against staff advice. Active medication titration requires continued monitoring. Multiple specific factors indicate a lower level of care would likely fail.",
+      "confidence": 0.95,
+      "gap": null
+    },
+    {
+      "criterionId": "treatment_response",
+      "status": "supported",
+      "evidence": [
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg014",
+          "timestampSec": 298,
+          "speaker": "psychiatrist",
+          "quote": "We're going to start you on lithium and quetiapine. The lithium will need close monitoring while we titrate to a therapeutic level.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg008",
+          "timestampSec": 150,
+          "speaker": "nurse",
+          "quote": "Zero point four milliequivalents per liter. Still subtherapeutic. We are titrating upward per protocol.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg009",
+          "timestampSec": 175,
+          "speaker": "psychiatrist",
+          "quote": "So we are actively titrating the lithium and the quetiapine dose was increased last night. Neither medication is at therapeutic range yet.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc3",
+          "segmentId": "enc3-seg005",
+          "timestampSec": 85,
+          "speaker": "psychiatrist",
+          "quote": "The lithium level this morning was zero point six. Still not therapeutic. We're continuing the titration.",
+          "verified": true
+        }
+      ],
+      "rationale": "Lithium was newly started and remains subtherapeutic at day four (level 0.6 mEq/L). Quetiapine dose was increased. Both medications require continued inpatient titration with daily lab monitoring. A partial treatment response is emerging but acute symptoms persist.",
+      "confidence": 0.93,
+      "gap": null
+    },
+    {
+      "criterionId": "less_restrictive_tried",
+      "status": "supported",
+      "evidence": [
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg012",
+          "timestampSec": 240,
+          "speaker": "psychiatrist",
+          "quote": "You were on a PHP nine days ago and decompensated within the week of leaving. That tells us a lower level of care is not going to hold right now.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg016",
+          "timestampSec": 355,
+          "speaker": "social_worker",
+          "quote": "Given her living situation and the rapid return after PHP, step-down to outpatient or PHP again would be premature at this time.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg011",
+          "timestampSec": 235,
+          "speaker": "psychiatrist",
+          "quote": "The PHP failed nine days before admission. We cannot step him back down before the medications are therapeutic and safety is established.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg013",
+          "timestampSec": 295,
+          "speaker": "social_worker",
+          "quote": "He explicitly left the PHP against staff advice on day three of that program, which also contributed to his rapid return.",
+          "verified": true
+        }
+      ],
+      "rationale": "The patient recently failed a PHP (decompensated within nine days of discharge) and left that program against staff advice. The clinical team explicitly discussed why step-down to PHP or outpatient is premature given the medication titration, ongoing safety concerns, and absence of a safe home environment.",
+      "confidence": 0.92,
+      "gap": null
+    }
+  ],
+  "summary": {
+    "supportedCount": 5,
+    "partialCount": 0,
+    "gapCount": 0,
+    "gaps": []
+  }
+}

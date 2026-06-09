@@ -1,0 +1,78 @@
+{
+  "id": "stay-borderline",
+  "label": "Borderline / improving",
+  "ehr": {
+    "stayId": "stay-borderline",
+    "patientPseudonym": "Patient D.W.",
+    "admissionDate": "2026-05-12",
+    "dayOfStay": 7,
+    "primaryDx": "Generalized anxiety disorder with major depressive episode, moderate",
+    "priorLevelsOfCare": [],
+    "medications": [
+      { "name": "Sertraline 100mg", "status": "stable" },
+      { "name": "Buspirone", "status": "stable" },
+      { "name": "Hydroxyzine PRN", "status": "stable" }
+    ]
+  },
+  "encounters": [
+    {
+      "id": "enc1",
+      "stayId": "stay-borderline",
+      "type": "admission",
+      "date": "2026-05-12",
+      "durationSec": 1440,
+      "segments": [
+        { "id": "enc1-seg001", "startSec": 12, "speaker": "psychiatrist", "text": "Walk me through what happened that brought you in." },
+        { "id": "enc1-seg002", "startSec": 28, "speaker": "patient", "text": "I was feeling really hopeless for a few days. I thought about not wanting to be here, but I never had a plan or anything specific." },
+        { "id": "enc1-seg003", "startSec": 55, "speaker": "psychiatrist", "text": "When you say not wanting to be here, can you tell me more about those thoughts?" },
+        { "id": "enc1-seg004", "startSec": 68, "speaker": "patient", "text": "Just passive. Like, it would be easier to not exist. Not something I would act on. I want to be around for my kids." },
+        { "id": "enc1-seg005", "startSec": 98, "speaker": "psychiatrist", "text": "Are you sleeping, eating, managing at home?" },
+        { "id": "enc1-seg006", "startSec": 112, "speaker": "patient", "text": "Sleep has been hard. But I'm getting up, getting the kids to school, doing the laundry. My wife has been really supportive." },
+        { "id": "enc1-seg007", "startSec": 145, "speaker": "psychiatrist", "text": "Tell me about your home situation." },
+        { "id": "enc1-seg008", "startSec": 158, "speaker": "patient", "text": "My wife and I have been married twelve years. She knows what I'm going through and she's been amazing through all of this." },
+        { "id": "enc1-seg009", "startSec": 185, "speaker": "psychiatrist", "text": "We're going to admit you for stabilization and to make sure you're safe." },
+        { "id": "enc1-seg010", "startSec": 200, "speaker": "nurse", "text": "He is calm and cooperative. No acute behavioral concerns noted on initial assessment." },
+        { "id": "enc1-seg011", "startSec": 228, "speaker": "psychiatrist", "text": "We'll keep his current medications the same for now and monitor over the next few days." },
+        { "id": "enc1-seg012", "startSec": 252, "speaker": "patient", "text": "I think I just needed a break and some support to get back on track. Being here feels safe." }
+      ]
+    },
+    {
+      "id": "enc2",
+      "stayId": "stay-borderline",
+      "type": "treatment_team",
+      "date": "2026-05-16",
+      "durationSec": 1100,
+      "segments": [
+        { "id": "enc2-seg001", "startSec": 10, "speaker": "psychiatrist", "text": "Day five. Let's see where he is." },
+        { "id": "enc2-seg002", "startSec": 22, "speaker": "nurse", "text": "He's been sleeping about six hours a night, up from four at admission. Eating all meals, no prompting needed." },
+        { "id": "enc2-seg003", "startSec": 46, "speaker": "nurse", "text": "He's been attending all groups and engaging well with the milieu. Staff have not had any behavioral concerns." },
+        { "id": "enc2-seg004", "startSec": 70, "speaker": "patient", "text": "I feel a lot better. The passive thoughts are mostly gone. I'm thinking about getting back to my routine." },
+        { "id": "enc2-seg005", "startSec": 92, "speaker": "psychiatrist", "text": "Any thoughts of hurting yourself at this point?" },
+        { "id": "enc2-seg006", "startSec": 103, "speaker": "patient", "text": "No. I'm future-oriented. I want to get home to my family and start outpatient therapy. I have things to look forward to." },
+        { "id": "enc2-seg007", "startSec": 128, "speaker": "social_worker", "text": "His wife has been present for visiting hours every day and they have been working through a safety plan together." },
+        { "id": "enc2-seg008", "startSec": 155, "speaker": "psychiatrist", "text": "Medications are unchanged and he is stable on the current regimen." },
+        { "id": "enc2-seg009", "startSec": 175, "speaker": "social_worker", "text": "We've scheduled an outpatient therapist appointment for next week and his prescriber follow-up is confirmed." },
+        { "id": "enc2-seg010", "startSec": 200, "speaker": "psychiatrist", "text": "He is making good progress. Let's plan for discharge in the next day or two pending continued stability." },
+        { "id": "enc2-seg011", "startSec": 225, "speaker": "nurse", "text": "He has been oriented and coherent throughout. No evidence of disorganized thinking or behavioral dyscontrol." },
+        { "id": "enc2-seg012", "startSec": 248, "speaker": "patient", "text": "I'm ready to go home. I feel like I have the tools I need and my wife and I have talked through the plan." }
+      ]
+    },
+    {
+      "id": "enc3",
+      "stayId": "stay-borderline",
+      "type": "continued_stay_review",
+      "date": "2026-05-18",
+      "durationSec": 780,
+      "segments": [
+        { "id": "enc3-seg001", "startSec": 8, "speaker": "psychiatrist", "text": "Day seven. How is he doing?" },
+        { "id": "enc3-seg002", "startSec": 20, "speaker": "nurse", "text": "Continued stability. He slept well, ate all meals independently, participated in morning group without issues." },
+        { "id": "enc3-seg003", "startSec": 42, "speaker": "patient", "text": "I feel like myself again. I'm not having any dark thoughts. I just want to get back to my kids." },
+        { "id": "enc3-seg004", "startSec": 62, "speaker": "psychiatrist", "text": "The safety plan is in place and he's endorsed it with his wife. Outpatient is arranged." },
+        { "id": "enc3-seg005", "startSec": 83, "speaker": "social_worker", "text": "Discharge paperwork is ready. His wife will pick him up this afternoon and he knows to call the crisis line or come to the ED if symptoms worsen." },
+        { "id": "enc3-seg006", "startSec": 108, "speaker": "psychiatrist", "text": "We have not discussed partial hospitalization or IOP as alternatives during this admission. He went directly to inpatient and is now going directly to outpatient." },
+        { "id": "enc3-seg007", "startSec": 138, "speaker": "psychiatrist", "text": "Medications remain unchanged throughout the stay. No titration was needed." },
+        { "id": "enc3-seg008", "startSec": 162, "speaker": "nurse", "text": "He is managing all activities of daily living independently and has been since day three of the stay." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "stay-supported",
+  "label": "Clearly supported",
+  "ehr": {
+    "stayId": "stay-supported",
+    "patientPseudonym": "Patient T.K.",
+    "admissionDate": "2026-05-18",
+    "dayOfStay": 4,
+    "primaryDx": "Bipolar I disorder, current episode mixed, severe",
+    "priorLevelsOfCare": [
+      {
+        "setting": "Partial Hospitalization Program (PHP)",
+        "date": "2026-05-09",
+        "outcome": "Discharged after 3 days; re-presented to ED 9 days later with acute decompensation"
+      }
+    ],
+    "medications": [
+      { "name": "Lithium carbonate", "status": "titrating" },
+      { "name": "Quetiapine", "status": "started" },
+      { "name": "Lorazepam", "status": "stable" }
+    ]
+  },
+  "encounters": [
+    {
+      "id": "enc1",
+      "stayId": "stay-supported",
+      "type": "admission",
+      "date": "2026-05-18",
+      "durationSec": 1800,
+      "segments": [
+        { "id": "enc1-seg001", "startSec": 10, "speaker": "psychiatrist", "text": "Tell me what's been happening. You were just at the PHP nine days ago." },
+        { "id": "enc1-seg002", "startSec": 28, "speaker": "patient", "text": "I know. I thought I could manage but everything fell apart again the same week." },
+        { "id": "enc1-seg003", "startSec": 52, "speaker": "psychiatrist", "text": "Are you having any thoughts of hurting yourself or others right now?" },
+        { "id": "enc1-seg004", "startSec": 68, "speaker": "patient", "text": "Yes. I have a plan. I know what I would use and when. I can't promise I won't do it." },
+        { "id": "enc1-seg005", "startSec": 95, "speaker": "psychiatrist", "text": "Can you agree to a safety plan with us and not act on those thoughts?" },
+        { "id": "enc1-seg006", "startSec": 110, "speaker": "patient", "text": "No. I don't think I can keep that promise. I don't trust myself right now." },
+        { "id": "enc1-seg007", "startSec": 138, "speaker": "nurse", "text": "Patient will need one-to-one observation given active plan and inability to contract for safety." },
+        { "id": "enc1-seg008", "startSec": 162, "speaker": "psychiatrist", "text": "Has anyone been home with you? Can you describe your living situation?" },
+        { "id": "enc1-seg009", "startSec": 177, "speaker": "patient", "text": "My roommate moved out. There's no one there. It's been completely chaotic, I haven't slept in three days." },
+        { "id": "enc1-seg010", "startSec": 204, "speaker": "psychiatrist", "text": "Are you eating?" },
+        { "id": "enc1-seg011", "startSec": 215, "speaker": "patient", "text": "Not really. I had coffee today. I can't sit still long enough to eat." },
+        { "id": "enc1-seg012", "startSec": 240, "speaker": "psychiatrist", "text": "You were on a PHP nine days ago and decompensated within the week of leaving. That tells us a lower level of care is not going to hold right now." },
+        { "id": "enc1-seg013", "startSec": 272, "speaker": "patient", "text": "I know the PHP wasn't enough. I need more support than that." },
+        { "id": "enc1-seg014", "startSec": 298, "speaker": "psychiatrist", "text": "We're going to start you on lithium and quetiapine. The lithium will need close monitoring while we titrate to a therapeutic level." },
+        { "id": "enc1-seg015", "startSec": 325, "speaker": "nurse", "text": "We will get labs in the morning and titrate based on the lithium level. She will need daily draws until we're in range." },
+        { "id": "enc1-seg016", "startSec": 355, "speaker": "social_worker", "text": "Given her living situation and the rapid return after PHP, step-down to outpatient or PHP again would be premature at this time." },
+        { "id": "enc1-seg017", "startSec": 390, "speaker": "psychiatrist", "text": "Agreed. We need inpatient until medications are stable and safety can be established more reliably." }
+      ]
+    },
+    {
+      "id": "enc2",
+      "stayId": "stay-supported",
+      "type": "continued_stay_review",
+      "date": "2026-05-20",
+      "durationSec": 1260,
+      "segments": [
+        { "id": "enc2-seg001", "startSec": 5, "speaker": "psychiatrist", "text": "Day three review. Let's go through each domain." },
+        { "id": "enc2-seg002", "startSec": 18, "speaker": "nurse", "text": "He remains on one-to-one observation. Overnight he was found attempting to tie a sheet around his neck and was redirected by staff." },
+        { "id": "enc2-seg003", "startSec": 45, "speaker": "psychiatrist", "text": "That's a significant incident. Has he spoken about his intentions?" },
+        { "id": "enc2-seg004", "startSec": 60, "speaker": "patient", "text": "I just want it to stop. I know I tried something last night. I can't guarantee I won't try again." },
+        { "id": "enc2-seg005", "startSec": 85, "speaker": "nurse", "text": "He still isn't sleeping. He was awake all night pacing and required two staff to manage behavioral agitation around 3 AM." },
+        { "id": "enc2-seg006", "startSec": 112, "speaker": "nurse", "text": "He refused all meals yesterday and needed staff assistance to change clothes this morning." },
+        { "id": "enc2-seg007", "startSec": 138, "speaker": "psychiatrist", "text": "What's the lithium level from this morning?" },
+        { "id": "enc2-seg008", "startSec": 150, "speaker": "nurse", "text": "Zero point four milliequivalents per liter. Still subtherapeutic. We are titrating upward per protocol." },
+        { "id": "enc2-seg009", "startSec": 175, "speaker": "psychiatrist", "text": "So we are actively titrating the lithium and the quetiapine dose was increased last night. Neither medication is at therapeutic range yet." },
+        { "id": "enc2-seg010", "startSec": 205, "speaker": "social_worker", "text": "He has no safe discharge environment. His roommate is gone, there is no family in the area, and he has no outpatient team currently established." },
+        { "id": "enc2-seg011", "startSec": 235, "speaker": "psychiatrist", "text": "The PHP failed nine days before admission. We cannot step him back down before the medications are therapeutic and safety is established." },
+        { "id": "enc2-seg012", "startSec": 265, "speaker": "care_team", "text": "We'll continue one-to-one, continue titrating medications, and hold on any discharge planning until the clinical picture stabilizes." },
+        { "id": "enc2-seg013", "startSec": 295, "speaker": "social_worker", "text": "He explicitly left the PHP against staff advice on day three of that program, which also contributed to his rapid return." },
+        { "id": "enc2-seg014", "startSec": 325, "speaker": "psychiatrist", "text": "Given the self-harm incident last night, the subtherapeutic medication levels, and the lack of any safe environment to return to, continued inpatient care is clearly indicated at this time." },
+        { "id": "enc2-seg015", "startSec": 360, "speaker": "nurse", "text": "Agreed. He would not be safe in a less structured setting right now." }
+      ]
+    },
+    {
+      "id": "enc3",
+      "stayId": "stay-supported",
+      "type": "treatment_team",
+      "date": "2026-05-21",
+      "durationSec": 900,
+      "segments": [
+        { "id": "enc3-seg001", "startSec": 8, "speaker": "psychiatrist", "text": "Day four. Any change overnight?" },
+        { "id": "enc3-seg002", "startSec": 20, "speaker": "nurse", "text": "He slept about three hours, which is an improvement, but he remains hypervigilant and was pacing for most of the night shift." },
+        { "id": "enc3-seg003", "startSec": 44, "speaker": "nurse", "text": "He accepted breakfast this morning but only ate about a quarter of the tray. Still required prompting." },
+        { "id": "enc3-seg004", "startSec": 65, "speaker": "patient", "text": "I feel a little less like jumping out of my skin today. But I still have those thoughts." },
+        { "id": "enc3-seg005", "startSec": 85, "speaker": "psychiatrist", "text": "The lithium level this morning was zero point six. Still not therapeutic. We're continuing the titration." },
+        { "id": "enc3-seg006", "startSec": 108, "speaker": "psychiatrist", "text": "He's showing early signs of partial response but persistent acute symptoms remain. We need to continue close monitoring." },
+        { "id": "enc3-seg007", "startSec": 135, "speaker": "social_worker", "text": "I've reached out to a community mental health center to establish outpatient care, but nothing is in place yet." },
+        { "id": "enc3-seg008", "startSec": 160, "speaker": "psychiatrist", "text": "We will reassess discharge readiness once the lithium is therapeutic and he can demonstrate sustained safety without one-to-one." }
+      ]
+    }
+  ]
+}

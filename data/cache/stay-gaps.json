@@ -1,0 +1,150 @@
+{
+  "stayId": "stay-gaps",
+  "generatedAt": "2026-06-09T00:00:00.000Z",
+  "modelId": "claude-sonnet-4-6",
+  "criteria": [
+    {
+      "criterionId": "risk_safety",
+      "status": "supported",
+      "evidence": [
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg002",
+          "timestampSec": 31,
+          "speaker": "patient",
+          "quote": "I had a plan to end my life. I had the pills counted out.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg004",
+          "timestampSec": 67,
+          "speaker": "patient",
+          "quote": "I still think about not waking up, but I haven't acted on it.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg002",
+          "timestampSec": 22,
+          "speaker": "nurse",
+          "quote": "Overnight she was on fifteen-minute checks and still isn't sleeping more than two hours.",
+          "verified": true
+        }
+      ],
+      "rationale": "The patient described a specific suicide plan on admission (pills counted out) and continues to report passive suicidal ideation on day five. The care team placed her on frequent safety checks, indicating the clinical team assessed ongoing risk requiring supervised monitoring.",
+      "confidence": 0.91,
+      "gap": null
+    },
+    {
+      "criterionId": "functional_impairment",
+      "status": "supported",
+      "evidence": [
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg002",
+          "timestampSec": 22,
+          "speaker": "nurse",
+          "quote": "Overnight she was on fifteen-minute checks and still isn't sleeping more than two hours.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg003",
+          "timestampSec": 41,
+          "speaker": "nurse",
+          "quote": "She needed prompting for meals and showers again today.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg009",
+          "timestampSec": 210,
+          "speaker": "nurse",
+          "quote": "She attempted to leave the unit this morning but was redirected.",
+          "verified": true
+        }
+      ],
+      "rationale": "Nursing reports severe sleep disruption (under two hours per night), ongoing need for prompting for basic self-care including meals and hygiene, and an elopement attempt requiring staff intervention — all indicating functional impairment at a level requiring inpatient structure.",
+      "confidence": 0.88,
+      "gap": null
+    },
+    {
+      "criterionId": "deterioration_risk",
+      "status": "supported",
+      "evidence": [
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg006",
+          "timestampSec": 128,
+          "speaker": "social_worker",
+          "quote": "She lives alone and her sister, who was checking on her, moved out of state last month.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg007",
+          "timestampSec": 151,
+          "speaker": "psychiatrist",
+          "quote": "So no one would be with her if she left now.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg005",
+          "timestampSec": 95,
+          "speaker": "psychiatrist",
+          "quote": "We increased the sertraline two days ago and just started olanzapine; we need to watch her closely while these settle.",
+          "verified": true
+        }
+      ],
+      "rationale": "The patient lives alone with no remaining support system — her only contact, her sister, recently moved away. Active medication changes (sertraline dose increase, new olanzapine) require close monitoring. A lower level of care would leave her without supervision during an active titration period.",
+      "confidence": 0.86,
+      "gap": null
+    },
+    {
+      "criterionId": "treatment_response",
+      "status": "supported",
+      "evidence": [
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg005",
+          "timestampSec": 95,
+          "speaker": "psychiatrist",
+          "quote": "We increased the sertraline two days ago and just started olanzapine; we need to watch her closely while these settle.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg008",
+          "timestampSec": 175,
+          "speaker": "psychiatrist",
+          "quote": "The medication changes need at least another week of inpatient monitoring before we can consider discharge.",
+          "verified": true
+        }
+      ],
+      "rationale": "The treatment plan includes active medication titration — a sertraline dose increase and a new olanzapine start — both requiring continued inpatient monitoring before the clinical team will consider discharge. The physician explicitly states the need for at least another week of inpatient observation.",
+      "confidence": 0.84,
+      "gap": null
+    },
+    {
+      "criterionId": "less_restrictive_tried",
+      "status": "not_supported",
+      "evidence": [],
+      "rationale": "Neither encounter contains any discussion of partial hospitalization, intensive outpatient, or other lower levels of care. There is no statement of why step-down is premature beyond the implicit clinical context.",
+      "confidence": 0.78,
+      "gap": "No discussion of whether partial hospitalization or intensive outpatient was considered, previously tried, or why step-down to a lower level of care is premature at this time."
+    }
+  ],
+  "summary": {
+    "supportedCount": 4,
+    "partialCount": 0,
+    "gapCount": 1,
+    "gaps": [
+      {
+        "criterionId": "less_restrictive_tried",
+        "gap": "No discussion of whether partial hospitalization or intensive outpatient was considered, previously tried, or why step-down to a lower level of care is premature at this time."
+      }
+    ]
+  }
+}

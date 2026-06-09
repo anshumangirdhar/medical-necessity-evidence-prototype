@@ -1,0 +1,56 @@
+{
+  "id": "stay-gaps",
+  "label": "Strong case, one gap",
+  "ehr": {
+    "stayId": "stay-gaps",
+    "patientPseudonym": "Patient R.M.",
+    "admissionDate": "2026-05-02",
+    "dayOfStay": 5,
+    "primaryDx": "Major depressive disorder, severe, recurrent, with psychotic features",
+    "priorLevelsOfCare": [],
+    "medications": [
+      { "name": "Sertraline", "status": "titrating" },
+      { "name": "Olanzapine", "status": "started" }
+    ]
+  },
+  "encounters": [
+    {
+      "id": "enc1",
+      "stayId": "stay-gaps",
+      "type": "admission",
+      "date": "2026-05-02",
+      "durationSec": 1320,
+      "segments": [
+        { "id": "enc1-seg001", "startSec": 12, "speaker": "psychiatrist", "text": "Can you tell me what brought you in today?" },
+        { "id": "enc1-seg002", "startSec": 31, "speaker": "patient", "text": "I had a plan to end my life. I had the pills counted out." },
+        { "id": "enc1-seg003", "startSec": 58, "speaker": "psychiatrist", "text": "Are you having thoughts of hurting yourself right now?" },
+        { "id": "enc1-seg004", "startSec": 70, "speaker": "patient", "text": "Yes. I still think it would be easier if I didn't wake up." },
+        { "id": "enc1-seg005", "startSec": 92, "speaker": "psychiatrist", "text": "Have you been able to sleep or eat since this started?" },
+        { "id": "enc1-seg006", "startSec": 108, "speaker": "patient", "text": "No. I haven't eaten in two days. I just lay there." },
+        { "id": "enc1-seg007", "startSec": 135, "speaker": "psychiatrist", "text": "Who is at home with you?" },
+        { "id": "enc1-seg008", "startSec": 148, "speaker": "patient", "text": "I live alone. My sister used to check on me but she moved away last month." },
+        { "id": "enc1-seg009", "startSec": 178, "speaker": "psychiatrist", "text": "We're going to start you on sertraline and monitor you closely." },
+        { "id": "enc1-seg010", "startSec": 200, "speaker": "nurse", "text": "She will need close observation overnight given the plan she described." }
+      ]
+    },
+    {
+      "id": "enc2",
+      "stayId": "stay-gaps",
+      "type": "treatment_team",
+      "date": "2026-05-06",
+      "durationSec": 1015,
+      "segments": [
+        { "id": "enc2-seg001", "startSec": 8, "speaker": "psychiatrist", "text": "Day five. Let's review where things stand." },
+        { "id": "enc2-seg002", "startSec": 22, "speaker": "nurse", "text": "Overnight she was on fifteen-minute checks and still isn't sleeping more than two hours." },
+        { "id": "enc2-seg003", "startSec": 41, "speaker": "nurse", "text": "She needed prompting for meals and showers again today." },
+        { "id": "enc2-seg004", "startSec": 67, "speaker": "patient", "text": "I still think about not waking up, but I haven't acted on it." },
+        { "id": "enc2-seg005", "startSec": 95, "speaker": "psychiatrist", "text": "We increased the sertraline two days ago and just started olanzapine; we need to watch her closely while these settle." },
+        { "id": "enc2-seg006", "startSec": 128, "speaker": "social_worker", "text": "She lives alone and her sister, who was checking on her, moved out of state last month." },
+        { "id": "enc2-seg007", "startSec": 151, "speaker": "psychiatrist", "text": "So no one would be with her if she left now." },
+        { "id": "enc2-seg008", "startSec": 175, "speaker": "psychiatrist", "text": "The medication changes need at least another week of inpatient monitoring before we can consider discharge." },
+        { "id": "enc2-seg009", "startSec": 210, "speaker": "nurse", "text": "She attempted to leave the unit this morning but was redirected." },
+        { "id": "enc2-seg010", "startSec": 240, "speaker": "psychiatrist", "text": "We will continue the current plan and reassess in 48 hours." }
+      ]
+    }
+  ]
+}

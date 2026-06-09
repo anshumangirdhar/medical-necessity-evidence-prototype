@@ -1,0 +1,121 @@
+{
+  "stayId": "stay-borderline",
+  "generatedAt": "2026-06-09T00:00:00.000Z",
+  "modelId": "claude-sonnet-4-6",
+  "criteria": [
+    {
+      "criterionId": "risk_safety",
+      "status": "not_supported",
+      "evidence": [],
+      "rationale": "The patient explicitly denied a plan or intent on admission, described passive ideation only, and expressed future orientation with specific reasons to live. By day five, he denies all ideation and is future-oriented. No safety incidents occurred during the stay.",
+      "confidence": 0.89,
+      "gap": "No evidence of active suicidal or homicidal ideation with plan or intent, recent attempt, command hallucinations, or inability to contract for safety in the recorded conversations."
+    },
+    {
+      "criterionId": "functional_impairment",
+      "status": "not_supported",
+      "evidence": [
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg006",
+          "timestampSec": 112,
+          "speaker": "patient",
+          "quote": "Sleep has been hard. But I'm getting up, getting the kids to school, doing the laundry. My wife has been really supportive.",
+          "verified": true
+        }
+      ],
+      "rationale": "On admission the patient reported some sleep difficulty but was managing all daily activities independently. Nursing reports no behavioral concerns on admission. By day five, he is eating all meals without prompting, sleeping six hours, and attending groups without issues.",
+      "confidence": 0.86,
+      "gap": "Conversation documents independent daily functioning throughout the stay — including managing children, household tasks, attending groups, and eating independently. No impairment at the level requiring inpatient structure is documented."
+    },
+    {
+      "criterionId": "deterioration_risk",
+      "status": "not_supported",
+      "evidence": [
+        {
+          "encounterId": "enc1",
+          "segmentId": "enc1-seg008",
+          "timestampSec": 158,
+          "speaker": "patient",
+          "quote": "My wife and I have been married twelve years. She knows what I'm going through and she's been amazing through all of this.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg007",
+          "timestampSec": 128,
+          "speaker": "social_worker",
+          "quote": "His wife has been present for visiting hours every day and they have been working through a safety plan together.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg009",
+          "timestampSec": 175,
+          "speaker": "social_worker",
+          "quote": "We've scheduled an outpatient therapist appointment for next week and his prescriber follow-up is confirmed.",
+          "verified": true
+        }
+      ],
+      "rationale": "The patient has a stable, supportive home environment with an actively engaged spouse, no prior decompensations documented, and reliable outpatient follow-up arranged. The social worker describes a completed safety plan with family involvement and confirmed appointments.",
+      "confidence": 0.84,
+      "gap": "All documented factors suggest a stable recovery environment — supportive spouse, intact functioning, no prior failed step-downs, outpatient follow-up secured. No specific reasons a lower level of care would fail are documented."
+    },
+    {
+      "criterionId": "treatment_response",
+      "status": "partially_supported",
+      "evidence": [
+        {
+          "encounterId": "enc2",
+          "segmentId": "enc2-seg008",
+          "timestampSec": 155,
+          "speaker": "psychiatrist",
+          "quote": "Medications are unchanged and he is stable on the current regimen.",
+          "verified": true
+        },
+        {
+          "encounterId": "enc3",
+          "segmentId": "enc3-seg007",
+          "timestampSec": 138,
+          "speaker": "psychiatrist",
+          "quote": "Medications remain unchanged throughout the stay. No titration was needed.",
+          "verified": true
+        }
+      ],
+      "rationale": "The patient is responding well — symptoms have resolved and he is stable on an unchanged medication regimen. Discharge planning is active with outpatient care confirmed. Continued inpatient care is not documented as clinically necessary for treatment response purposes.",
+      "confidence": 0.75,
+      "gap": "Medication has been stable and unchanged throughout the stay with no active titration. The patient is in discharge planning. No documentation of ongoing acute symptoms requiring inpatient-level monitoring."
+    },
+    {
+      "criterionId": "less_restrictive_tried",
+      "status": "not_supported",
+      "evidence": [],
+      "rationale": "No discussion of partial hospitalization, intensive outpatient, or other lower levels of care appears anywhere in the recorded encounters. The patient was admitted directly to inpatient and is being discharged directly to outpatient without any documented consideration of intermediate step-down options.",
+      "confidence": 0.82,
+      "gap": "No mention of partial hospitalization or intensive outpatient as alternatives considered during this admission. The patient has no prior psychiatric levels of care documented, and the conversation does not address why intermediate step-down options were bypassed."
+    }
+  ],
+  "summary": {
+    "supportedCount": 0,
+    "partialCount": 1,
+    "gapCount": 4,
+    "gaps": [
+      {
+        "criterionId": "risk_safety",
+        "gap": "No evidence of active suicidal or homicidal ideation with plan or intent, recent attempt, command hallucinations, or inability to contract for safety in the recorded conversations."
+      },
+      {
+        "criterionId": "functional_impairment",
+        "gap": "Conversation documents independent daily functioning throughout the stay — including managing children, household tasks, attending groups, and eating independently. No impairment at the level requiring inpatient structure is documented."
+      },
+      {
+        "criterionId": "deterioration_risk",
+        "gap": "All documented factors suggest a stable recovery environment — supportive spouse, intact functioning, no prior failed step-downs, outpatient follow-up secured. No specific reasons a lower level of care would fail are documented."
+      },
+      {
+        "criterionId": "less_restrictive_tried",
+        "gap": "No mention of partial hospitalization or intensive outpatient as alternatives considered during this admission. The patient has no prior psychiatric levels of care documented, and the conversation does not address why intermediate step-down options were bypassed."
+      }
+    ]
+  }
+}
