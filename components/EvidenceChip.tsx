@@ -2,10 +2,6 @@
 
 import { EvidenceItem } from "@/lib/types";
 
-"use client";
-
-import { EvidenceItem } from "@/lib/types";
-
 interface EvidenceChipProps {
   item: EvidenceItem;
   isActive?: boolean;
